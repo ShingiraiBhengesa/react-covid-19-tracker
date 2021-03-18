@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ .container{
+     padding: 1em;
+     width: 100%;
+     text-align: center;
+
+ }
+
+ .dropdown{
+     margin: 1em 0;
+    padding: 0.5em;
+    font-size: 1em;
+ }
+
+ .dropdown option{
+    word-wrap: break-word;
+ }
+
+ .flex {
+    min-height: 66vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    margin: 1em 0;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.box.confirmed {
+    border: 1px solid #c1e964;
+    background: #d15d30;
+}
+
+.box.recovered {
+    border: 1px solid #c1e964;
+    background: #e4da4f;
+}
+
+.box.deaths {
+    border: 1px solid #c1e964;
+    background: #4cccbb;
+}
+
+@media screen and (min-width: 900px){
+    .flex{
+        flex-wrap: nowrap;
+    }
+
+    .box{
+        margin: 1em ;
+        max-width: 300px;
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+}
